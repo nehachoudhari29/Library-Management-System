@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1AA7257B-2FCE-47AC-8A65-9F71556709BD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>My_Libryary_Management</RootNamespace>
+    <AssemblyName>My Libryary Management</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\LibraryManagement.mdf" />
+    <Content Include="App_Data\LibraryManagement_log.ldf">
+      <DependentUpon>LibraryManagement.mdf</DependentUpon>
+    </Content>
+    <Content Include="assignreport.aspx" />
+    <Content Include="Book Assign.aspx" />
+    <Content Include="Book.aspx" />
+    <Content Include="bookreport.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\corporate-background-texture.jpg" />
+    <Content Include="Images\download.jpeg" />
+    <Content Include="Images\images %281%29.jpeg" />
+    <Content Include="Images\images %282%29.jpeg" />
+    <Content Include="Images\images %283%29.jpeg" />
+    <Content Include="Images\images.jpeg" />
+    <Content Include="Images\IMG1.jpg" />
+    <Content Include="Images\intro-bg.jpg" />
+    <Content Include="Images\lib.jpeg" />
+    <Content Include="Images\Lib1.jpg" />
+    <Content Include="Images\Library-HD-Wallpapersrea.jpg" />
+    <Content Include="Images\Light.png" />
+    <Content Include="Images\login-page-background-images-hd-2.jpg" />
+    <Content Include="Images\login-page-background-images-hd-9.jpg" />
+    <Content Include="Images\mybg.jpg" />
+    <Content Include="Images\slideshow-wallpaper5.jpg" />
+    <Content Include="JavaScript\ai.0.15.0-build58334.js" />
+    <Content Include="JavaScript\ai.0.15.0-build58334.min.js" />
+    <Content Include="JavaScript\bookvalidation.js" />
+    <Content Include="JavaScript\bootstrap.js" />
+    <Content Include="JavaScript\bootstrap.min.js" />
+    <Content Include="JavaScript\dashboard-validation.js" />
+    <Content Include="JavaScript\jquery-1.10.2.intellisense.js" />
+    <Content Include="JavaScript\jquery-1.10.2.js" />
+    <Content Include="JavaScript\jquery-1.10.2.min.js" />
+    <Content Include="JavaScript\jquery-1.11.2.js" />
+    <Content Include="JavaScript\jquery.validate-vsdoc.js" />
+    <Content Include="JavaScript\jquery.validate.js" />
+    <Content Include="JavaScript\jquery.validate.min.js" />
+    <Content Include="JavaScript\jquery.validate.unobtrusive.js" />
+    <Content Include="JavaScript\jquery.validate.unobtrusive.min.js" />
+    <Content Include="JavaScript\modernizr-2.6.2.js" />
+    <Content Include="JavaScript\respond.js" />
+    <Content Include="JavaScript\respond.min.js" />
+    <Content Include="JavaScript\_references.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Manager.aspx" />
+    <Content Include="Manager1.aspx" />
+    <Content Include="Over Due.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Regtest.aspx" />
+    <Content Include="studentreport.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="User.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebFormassignreport.aspx" />
+    <Content Include="WebFormstudentreport.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assignreport.aspx.cs">
+      <DependentUpon>assignreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assignreport.aspx.designer.cs">
+      <DependentUpon>assignreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book Assign.aspx.cs">
+      <DependentUpon>Book Assign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book Assign.aspx.designer.cs">
+      <DependentUpon>Book Assign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book.aspx.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book.aspx.designer.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookreport.aspx.cs">
+      <DependentUpon>bookreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookreport.aspx.designer.cs">
+      <DependentUpon>bookreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionStrings.cs" />
+    <Compile Include="DataSetassign.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetassign.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetbook.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetbook.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetstudent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetstudent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.aspx.cs">
+      <DependentUpon>Manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager.aspx.designer.cs">
+      <DependentUpon>Manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager1.aspx.cs">
+      <DependentUpon>Manager1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager1.aspx.designer.cs">
+      <DependentUpon>Manager1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Over Due.aspx.cs">
+      <DependentUpon>Over Due.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Over Due.aspx.designer.cs">
+      <DependentUpon>Over Due.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Regtest.aspx.cs">
+      <DependentUpon>Regtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Regtest.aspx.designer.cs">
+      <DependentUpon>Regtest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="studentreport.aspx.cs">
+      <DependentUpon>studentreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentreport.aspx.designer.cs">
+      <DependentUpon>studentreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormassignreport.aspx.cs">
+      <DependentUpon>WebFormassignreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormassignreport.aspx.designer.cs">
+      <DependentUpon>WebFormassignreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormstudentreport.aspx.cs">
+      <DependentUpon>WebFormstudentreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormstudentreport.aspx.designer.cs">
+      <DependentUpon>WebFormstudentreport.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSetassign.xsc">
+      <DependentUpon>DataSetassign.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetassign.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetassign.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetassign.xss">
+      <DependentUpon>DataSetassign.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetbook.xsc">
+      <DependentUpon>DataSetbook.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetbook.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetbook.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetbook.xss">
+      <DependentUpon>DataSetbook.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetstudent.xsc">
+      <DependentUpon>DataSetstudent.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetstudent.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetstudent.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetstudent.xss">
+      <DependentUpon>DataSetstudent.xsd</DependentUpon>
+    </None>
+    <None Include="JavaScript\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportassign.rdlc" />
+    <EmbeddedResource Include="Reportbookrecord.rdlc" />
+    <EmbeddedResource Include="Reportstudent.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51503</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

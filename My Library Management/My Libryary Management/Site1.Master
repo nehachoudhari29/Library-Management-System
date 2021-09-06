@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="My_Libryary_Management.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Library Management System</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            color: #CC0000;
+            font-size: small;
+            font-weight: 700;
+            margin-left: 7px;
+        }
+        .style3
+        {
+            color: #0066FF;
+            text-align: right;
+            font-size: xx-large;
+            margin-left: 7px;
+            background-color: #CCCCCC;
+        }
+        .style4
+        {
+            width: 807px;
+        }
+        div.menu
+        {
+            margin:0px 0px 0px 0px;
+            padding:0px 0px 0px 0px;
+            min-width:100%;
+        }
+        .menu
+        {
+            text-align: justify;
+        }
+        .menu
+        {
+            text-align: justify;
+        }
+        .menu
+        {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body bgcolor="aqua">
+    <form id="form1" runat="server" style="background-color: #33CCCC">
+    <div style="background-color:Silver; color: #000080;" Height="25px">
+        <strong><span class="style3">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        Library Management System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button runat="server" Text="Logout" ID="btn_logout" Height="23px" 
+            Width="75px" CssClass="style1" onclick="btn_logout_Click" />
+    </span></strong></div>
+    <table>
+    <tr>
+    <td class="style4">
+    <asp:Menu ID="menu_master" runat="server" Orientation="Horizontal" 
+        BackColor="Red" Font-Size="Large" Width="1020px" BorderColor="White" Height="30px" 
+            StaticHoverStyle-Font-Bold="true" ForeColor="White" 
+            style="font-size: x-large" onmenuitemclick="menu_master_MenuItemClick1">
+    <StaticMenuItemStyle HorizontalPadding="75" />
+    <Items>
+    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx" Selected="True"></asp:MenuItem>
+    <asp:MenuItem Text="Book" Value="Book" NavigateUrl="~/Book.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Assign" Value="Assign" NavigateUrl="~/Book Assign.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Over Due" Value="Over Due" NavigateUrl="~/Over Due.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Student" Value="Users" NavigateUrl="~/User.aspx"></asp:MenuItem>
+    </Items>
+    </asp:Menu>
+    </td></tr></table>
+    <div align="center">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+</body>
+</html>

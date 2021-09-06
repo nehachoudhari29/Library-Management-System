@@ -1,0 +1,7 @@
+C:\Users\Neha\Desktop\My Library Management\My Libryary Management\bin\My Libryary Management.dll
+C:\Users\Neha\Desktop\My Library Management\My Libryary Management\bin\My Libryary Management.pdb
+C:\Users\Neha\Desktop\My Library Management\My Libryary Management\obj\Debug\My Libryary Management.dll
+C:\Users\Neha\Desktop\My Library Management\My Libryary Management\obj\Debug\My Libryary Management.pdb
+C:\Users\Neha\Desktop\My Library Management\My Libryary Management\obj\Debug\My Library Management.csprojResolveAssemblyReference.cache
+C:\Users\Neha\Desktop\My Library Management\My Libryary Management\obj\Debug\RdlCompile.cache
+C:\Users\Neha\Desktop\My Library Management\My Libryary Management\obj\Debug\RdlCompile.compiled
